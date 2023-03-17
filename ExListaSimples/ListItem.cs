@@ -43,7 +43,7 @@ namespace ExListaSimples
                     }
                 }
             }
-            Console.WriteLine("Item inserido");
+            Console.WriteLine($"Item {aux.Value} inserido");
         }
 
         private void InsertMiddle(Item middle)
@@ -82,25 +82,6 @@ namespace ExListaSimples
             aux.Next = Begin;
             Begin = aux;
         }
-
-        /*
-        public bool FindItem(Item f)
-        {
-            Item aux = Begin;
-            while(aux.Next != null)
-            {
-                if(aux.Value == f.Value)
-                {
-                    return true;
-                }
-                else
-                {
-                    aux = aux.Next;
-                }
-            }
-                    return false;
-        }
-        */
 
         public void PrintList()
         {
